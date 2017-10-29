@@ -5,18 +5,16 @@
 
 Fork of sindresorhus' awesome [AVA](https://github.com/avajs/ava) test runner to support TypeScript out of the box, without a prior build step.
 
-This is a fork of the official AVA repository with a couple of minimally invasive changes. Uses `ts-node/register` instead of Babel. Not the nicest solution, but it works pretty well.
+This is a fork of the official AVA repository with a couple of [minimally invasive changes](https://github.com/andywer/ava-ts/pull/1). Uses `ts-node/register` instead of Babel. Not the nicest solution, but it works pretty well.
 
 
 ## Installation
 
-The package has not been published to npm yet, so install it like that for now:
-
 ```sh
-npm install --save-dev ava ts-node ava-ts@github:andywer/ava-ts
+npm install --save-dev ava-ts ava ts-node
 
 # Using yarn:
-yarn add --dev ava ts-node ava-ts@github:andywer/ava-ts
+yarn add --dev ava-ts ava ts-node
 ```
 
 
