@@ -1,10 +1,9 @@
 {
-	"name": "ava",
+	"name": "ava-ts",
 	"version": "0.23.0",
-	"description": "Futuristic test runner 🚀",
+	"description": "Fork of the AVA test runner with native typescript support 🚀",
 	"license": "MIT",
-	"repository": "avajs/ava",
-	"homepage": "https://ava.li",
+	"repository": "andywer/ava-ts",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
@@ -12,29 +11,8 @@
 	},
 	"maintainers": [
 		{
-			"name": "Vadim Demedes",
-			"email": "vdemedes@gmail.com",
-			"url": "github.com/vadimdemedes"
-		},
-		{
-			"name": "James Talmage",
-			"email": "james@talmage.io",
-			"url": "github.com/jamestalmage"
-		},
-		{
-			"name": "Mark Wubben",
-			"email": "mark@novemberborn.net",
-			"url": "novemberborn.net"
-		},
-		{
-			"name": "Juan Soto",
-			"email": "juan@juansoto.me",
-			"url": "juansoto.me"
-		},
-		{
-			"name": "Jeroen Engels",
-			"email": "jfm.engels@gmail.com",
-			"url": "github.com/jfmengels"
+			"name": "Andy Wermke",
+			"url": "github.com/andywer"
 		}
 	],
 	"bin": "cli.js",
@@ -54,44 +32,6 @@
 		"*.js",
 		"*.js.flow",
 		"types/generated.d.ts"
-	],
-	"keywords": [
-		"🦄",
-		"test",
-		"runner",
-		"testing",
-		"ava",
-		"concurrent",
-		"parallel",
-		"fast",
-		"tdd",
-		"cli-app",
-		"cli",
-		"jest",
-		"mocha",
-		"tape",
-		"tap",
-		"qunit",
-		"jasmine",
-		"babel",
-		"assert",
-		"assertion",
-		"futuristic",
-		"promise",
-		"promises",
-		"async",
-		"function",
-		"await",
-		"generator",
-		"generators",
-		"yield",
-		"observable",
-		"unit",
-		"observables",
-		"snapshot",
-		"expect",
-		"typescript",
-		"flow"
 	],
 	"peerDependencies": {
 		"ava": "0.*",
