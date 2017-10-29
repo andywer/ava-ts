@@ -22,7 +22,7 @@ const AvaFiles = require('./lib/ava-files');
 const fork = require('./lib/fork');
 
 function resolveModules(modules) {
-	return arrify(modules).map(name => {
+	return modules.map(name => {
 		const modulePath = resolveCwd.silent(name);
 
 		if (modulePath === null) {
@@ -53,7 +53,7 @@ class Api extends EventEmitter {
 		autoBind(this);
 
 		this.options = Object.assign({match: []}, options);
-		this.options.require = resolveModules(this.options.require);
+		this.options.require = resolveModules(arrify(this.options.require).concat('ts-node/register'));
 	}
 	_runFile(file, runStatus, execArgv) {
 		const hash = this.precompiler.precompileFile(file);
