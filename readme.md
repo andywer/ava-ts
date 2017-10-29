@@ -1,5 +1,8 @@
 # AVA-TS
 
+[![Build Status](https://travis-ci.org/andywer/ava-ts.svg?branch=master)](https://travis-ci.org/andywer/ava-ts)
+[![NPM Version](https://img.shields.io/npm/v/ava-ts.svg)](https://www.npmjs.com/package/ava-ts)
+
 Fork of sindresorhus' awesome [AVA](https://github.com/avajs/ava) test runner to support TypeScript out of the box, without a prior build step.
 
 This is a fork of the official AVA repository with a couple of minimally invasive changes. Uses `ts-node/register` instead of Babel. Not the nicest solution, but it works pretty well.
