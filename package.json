@@ -20,8 +20,8 @@
 		"node": ">=4"
 	},
 	"scripts": {
-		"lint": "xo && (cd test/fixture && xo '**' '!{source-map-initial,syntax-error}.js' '!snapshots/test-sourcemaps/build/**') && lock-verify",
-		"test": "npm run lint && flow check test/flow-types && tsc -p test/ts-types && nyc tap --no-cov --timeout=300 --jobs=4 test/*.js test/reporters/*.js",
+		"lint": "xo && lock-verify",
+		"test": "npm run lint && node ./cli.js",
 		"test-win": "tap --no-cov --reporter=classic --timeout=300 --jobs=4 test/*.js test/reporters/*.js",
 		"visual": "node test/visual/run-visual-tests.js",
 		"prepublish": "npm run make-ts",
@@ -123,6 +123,7 @@
 		"update-notifier": "^2.3.0"
 	},
 	"devDependencies": {
+		"ava": "^0.23.0",
 		"cli-table2": "^0.2.0",
 		"codecov": "^2.1.0",
 		"del": "^3.0.0",
@@ -146,6 +147,7 @@
 		"tap": "^10.0.0",
 		"temp-write": "^3.1.0",
 		"touch": "^3.1.0",
+		"ts-node": "^3.3.0",
 		"typescript": "^2.2.2",
 		"xo": "^0.18.2",
 		"zen-observable": "^0.5.1"
