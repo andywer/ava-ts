@@ -93,6 +93,10 @@
 		"typescript",
 		"flow"
 	],
+	"peerDependencies": {
+		"ava": "0.*",
+		"ts-node": "^3.0.0"
+	},
 	"dependencies": {
 		"@ava/babel-preset-stage-4": "^1.1.0",
 		"@ava/babel-preset-transform-test-files": "^3.0.0",
