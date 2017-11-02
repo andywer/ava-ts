@@ -33,7 +33,7 @@ Write your tests in TypeScript as you would usually do and import from `ava`, no
 import test from 'ava'
 
 test('one plus two equals three', t => {
-	t.is(1 + 2, 3)
+  t.is(1 + 2, 3)
 })
 ```
 
@@ -41,6 +41,39 @@ Instead of running `ava`, just run the `ava-ts` CLI tool instead. That's it!
 
 It will use all the same options and defaults you know from AVA, but searches for `*.ts` files instead of `*.js`.
 
+```
+$ ava-ts --help
+
+  Fork of the AVA test runner with native typescript support 🚀
+
+  Usage
+    ava-ts [<file|directory|glob> ...]
+
+  Options
+    --init                  Add AVA to your project
+    --fail-fast             Stop after first test failure
+    --serial, -s            Run tests serially
+    --tap, -t               Generate TAP output
+    --verbose, -v           Enable verbose output
+    --color                 Force color output
+    --no-color              Disable color output
+    --match, -m             Only run tests with matching title (Can be repeated)
+    --watch, -w             Re-run tests when tests and source files change
+    --timeout, -T           Set global timeout
+    --concurrency, -c       Max number of test files running at the same time (Default: CPU cores)
+    --update-snapshots, -u  Update snapshots
+
+  Examples
+    ava-ts
+    ava-ts test.ts test2.ts
+    ava-ts test-*.ts
+    ava-ts test
+    ava-ts --init
+    ava-ts --init foo.ts
+
+  Default patterns when no arguments:
+  test.ts test-*.ts test/**/*.ts **/__tests__/**/*.ts **/*.test.ts
+```
 
 ## Documentation
 
