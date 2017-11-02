@@ -5,6 +5,11 @@
 
 Native TypeScript support for sindresorhus' awesome [**AVA**](https://github.com/avajs/ava) test runner out of the box, without a prior build step.
 
+🚀 Zero-configuration setup<br/>
+⏩ Parallel test execution<br/>
+🖼 Snapshot testing<br/>
+📈 All your favorite reporters
+
 This is a fork of the official AVA repository with a couple of [minimally invasive changes](https://github.com/andywer/ava-ts/pull/1). Uses `ts-node/register` instead of Babel. Not the cleanest solution, but it works pretty well.
 
 
@@ -42,19 +47,9 @@ It will use all the same options and defaults you know from AVA, but searches fo
 See [AVA's official docs](https://github.com/avajs/ava) for detailed information.
 
 
-## Features
+## Limitations
 
-It comes with most of the great features you love:
-
-* Zero-configuration setup
-* Parallel test execution
-* Snapshot testing
-* All your favorite reporters
-
-
-### Limitations
-
-There are a few limitations, however.
+There are a few limitations compared to the original `ava` CLI, however.
 
 * No babel support
 * No power assert
