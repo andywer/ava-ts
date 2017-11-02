@@ -10,7 +10,7 @@ Native TypeScript support for sindresorhus' awesome [**AVA**](https://github.com
 🖼 Snapshot testing<br/>
 📈 All your favorite reporters
 
-This is a fork of the official AVA repository with a couple of [minimally invasive changes](https://github.com/andywer/ava-ts/pull/1). Uses `ts-node/register` instead of Babel. Not the cleanest solution, but it works pretty well.
+This is a fork of the official AVA repository with a couple of [minimally invasive changes](https://github.com/andywer/ava-ts/pull/1). Uses `ts-node/register` instead of Babel. Not the cleanest solution, but it works well.
 
 
 ## Installation
