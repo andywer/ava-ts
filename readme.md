@@ -90,6 +90,20 @@ There are a few limitations compared to the original `ava` CLI, however.
 * No babel support
 * No power assert
 
+## Frequently Asked Questions
+
+<details>
+<summary>How to use AVA-TS when the <i>module</i> compiler option is set to ES6 modules?</summary>
+
+Especially when working with bundlers like webpack you will encounter this issue. Fortunately, there is a simple fix to make TypeScript emit node-style modules when running AVA-TS:
+
+```sh
+TS_NODE_COMPILER_OPTIONS='{"module":"commonjs"}' ava-ts
+```
+
+If you feel this use case needs to be improved, complain in #5 😉
+</details>
+
 
 ## License
 
