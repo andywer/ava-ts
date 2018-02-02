@@ -72,7 +72,7 @@ $ ava-ts --help
     ava-ts --init foo.ts
 
   Default patterns when no arguments:
-  test.ts test-*.ts test/**/*.ts **/__tests__/**/*.ts **/*.test.ts
+  test.ts test.tsx test-*.ts test-*.tsx test/**/*.ts test/**/*.tsx **/__tests__/**/*.ts **/__tests__/**/*.tsx **/*.test.ts **/*.test.tsx
 ```
 
 ## Documentation
