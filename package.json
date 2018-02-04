@@ -1,6 +1,6 @@
 {
 	"name": "ava-ts",
-	"version": "0.24.0",
+	"version": "0.24.1",
 	"description": "Fork of the AVA test runner with native typescript support 🚀",
 	"license": "MIT",
 	"repository": "andywer/ava-ts",
