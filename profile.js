@@ -94,7 +94,7 @@ babelConfigHelper.build(process.cwd(), cacheDir, conf.babel, true)
 			tty: false,
 			cacheDir,
 			precompiled,
-			require: resolveModules(conf.require)
+			require: resolveModules(arrify(this.options.require).concat('ts-node/register'))
 		};
 
 		const events = new EventEmitter();
