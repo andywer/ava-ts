@@ -87,6 +87,8 @@ babelConfigHelper.build(process.cwd(), cacheDir, conf.babel, true)
 		const precompiled = {};
 		precompiled[file] = precompiler.precompileFile(file);
 
+		const options = this.options || {};
+
 		const opts = {
 			file,
 			failFast: cli.flags.failFast,
@@ -94,7 +96,7 @@ babelConfigHelper.build(process.cwd(), cacheDir, conf.babel, true)
 			tty: false,
 			cacheDir,
 			precompiled,
-			require: resolveModules(arrify(this.options.require).concat('ts-node/register'))
+			require: resolveModules(arrify(options.require).concat('ts-node/register'))
 		};
 
 		const events = new EventEmitter();
