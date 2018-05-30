@@ -53,7 +53,7 @@ class Api extends EventEmitter {
 		autoBind(this);
 
 		this.options = Object.assign({match: []}, options);
-		this.options.require = resolveModules(arrify(this.options.require).concat('ts-node/register'));
+		this.options.require = resolveModules(['ts-node/register'].concat(arrify(this.options.require)));
 	}
 
 	_runFile(file, runStatus, execArgv) {
