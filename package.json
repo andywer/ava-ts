@@ -24,7 +24,7 @@
 	],
 	"peerDependencies": {
 		"ava": "0.*",
-		"ts-node": "^3.0.0 || ^4.0.1 || ^5.0.0 || ^6.0.0"
+		"ts-node": "^3.0.0 || ^4.0.1 || ^5.0.0 || ^6.0.0 || ^7.0.0"
 	},
 	"dependencies": {
 		"@ava/babel-preset-stage-4": "^1.1.0",
