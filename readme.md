@@ -85,19 +85,10 @@ If a test is skipped with the `.skip` modifier, the respective `.beforeEach()` a
 
 ## Limitations
 
-There are a few limitations compared to the original `ava` CLI, however.
+There are a few limitations compared to the original `ava` CLI.
 
 * No babel support
 * No power assert
-
-
-## Help, I get weird TypeScript errors!
-
-Does it look as if TypeScript doesn't even read your `tsconfig.json`? `ts-node` recently [introduced a breaking change](https://github.com/TypeStrong/ts-node/releases/tag/v7.0.0): It&nbsp;will no longer load the `tsconfig.json` by default.
-
-There are two ways to fix that:
-1. Make sure you set the environment variable `TS_NODE_FILES=true`
-2. Downgrade to `ts-node` v6.x
 
 
 ## Frequently Asked Questions
