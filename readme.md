@@ -3,16 +3,14 @@
 [![Build Status](https://travis-ci.org/andywer/ava-ts.svg?branch=master)](https://travis-ci.org/andywer/ava-ts)
 [![NPM Version](https://img.shields.io/npm/v/ava-ts.svg)](https://www.npmjs.com/package/ava-ts)
 
-Native TypeScript support for sindresorhus' awesome [**AVA**](https://github.com/avajs/ava) test runner out of the box, without a prior build step.
+Bringing zero-config TypeScript support to the [**AVA**](https://github.com/avajs/ava) test runner. Configures AVA to use [ts-node](https://github.com/TypeStrong/ts-node) and matches `.ts` test files by default.
 
 🚀 Zero-configuration setup<br/>
 ⏩ Parallel test execution<br/>
 🖼 Snapshot testing<br/>
 📈 All your favorite reporters
 
-This is a lean wrapper around the default AVA CLI tool that presets a standard TypeScript config and works with AVA v1.0+.
-
-Still on AVA v0.25? Check out [ava-ts v0.25](https://www.npmjs.com/package/ava-ts/v/0.25.2).
+Works with AVA v1.0+. Still on AVA v0.25? Check out [ava-ts v0.25](https://www.npmjs.com/package/ava-ts/v/0.25.2).
 
 
 ## Installation
@@ -46,34 +44,32 @@ It will use all the same options and defaults you know from AVA, but searches fo
 ```
 $ ava-ts --help
 
-  Fork of the AVA test runner with native typescript support 🚀
+Fork of the AVA test runner with native typescript support 🚀
 
-  Usage
-    ava-ts [<file|directory|glob> ...]
+Usage
+  ava-ts [<file|directory|glob> ...]
 
-  Options
-    --init                  Add AVA to your project
-    --fail-fast             Stop after first test failure
-    --serial, -s            Run tests serially
-    --tap, -t               Generate TAP output
-    --verbose, -v           Enable verbose output
-    --color                 Force color output
-    --no-color              Disable color output
-    --match, -m             Only run tests with matching title (Can be repeated)
-    --watch, -w             Re-run tests when tests and source files change
-    --timeout, -T           Set global timeout
-    --concurrency, -c       Max number of test files running at the same time (Default: CPU cores)
-    --update-snapshots, -u  Update snapshots
+Options
+  --init                  Add AVA to your project
+  --fail-fast             Stop after first test failure
+  --serial, -s            Run tests serially
+  --tap, -t               Generate TAP output
+  --verbose, -v           Enable verbose output
+  --color                 Force color output
+  --no-color              Disable color output
+  --match, -m             Only run tests with matching title (Can be repeated)
+  --watch, -w             Re-run tests when tests and source files change
+  --timeout, -T           Set global timeout
+  --concurrency, -c       Max number of test files running at the same time (Default: CPU cores)
+  --update-snapshots, -u  Update snapshots
 
-  Examples
-    ava-ts
-    ava-ts test.ts test2.ts
-    ava-ts test-*.ts
-    ava-ts test
-    ava-ts --init
-    ava-ts --init foo.ts
+Examples
+  ava-ts
+  ava-ts test.ts test2.ts
+  ava-ts test-*.ts
+  ava-ts test
 
-  Default patterns when no arguments:
+Default patterns when no arguments:
   test.ts test.tsx test-*.ts test-*.tsx test/**/*.ts test/**/*.tsx **/__tests__/**/*.ts **/__tests__/**/*.tsx **/*.test.ts **/*.test.tsx
 ```
 
