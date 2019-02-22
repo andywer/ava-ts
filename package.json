@@ -1,0 +1,43 @@
+{
+	"name": "ava-ts",
+	"version": "1.0.0",
+	"description": "Fork of the AVA test runner with native typescript support 🚀",
+	"author": "Andy Wermke (https://github.com/andywer)",
+	"license": "MIT",
+	"repository": "andywer/ava-ts",
+	"bin": "cli.js",
+	"engines": {
+		"node": ">= 6"
+	},
+	"scripts": {
+		"build": "tsc",
+		"prepare": "run-p build"
+	},
+	"files": [
+		"dist",
+		"*.js"
+	],
+	"peerDependencies": {
+		"ava": "1.*",
+		"ts-node": "^3.0.0 || ^4.0.1 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
+	},
+	"devDependencies": {
+		"@types/execa": "^0.9.0",
+		"@types/glob": "^7.1.1",
+		"@types/meow": "^5.0.0",
+		"@types/node": "^11.9.4",
+		"@types/pkg-conf": "^2.1.0",
+		"@types/tmp": "0.0.34",
+		"ava": "^1.2.1",
+		"npm-run-all": "^4.1.5",
+		"typescript": "^3.3.3333"
+	},
+	"dependencies": {
+		"esm": "^3.2.5",
+		"execa": "^1.0.0",
+		"glob": "^7.1.3",
+		"meow": "^5.0.0",
+		"pkg-conf": "^2.1.0",
+		"tmp": "0.0.33"
+	}
+}

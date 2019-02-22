@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es2015"],
+    "outDir": "dist",
+    "strict": true
+  },
+  "include": [
+    "./src/cli.ts"
+  ]
+}
