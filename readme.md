@@ -16,7 +16,7 @@ Works with AVA v1.0+. Still on AVA v0.25? Check out [ava-ts v0.25](https://www.n
 ## Installation
 
 ```sh
-npm install --save-dev ava-ts ava ts-node
+npm install --save-dev ava-ts@next ava ts-node
 
 # Using yarn:
 yarn add --dev ava-ts ava ts-node
