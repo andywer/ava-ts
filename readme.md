@@ -25,7 +25,7 @@ yarn add --dev ava-ts ava ts-node
 
 ## Usage
 
-Write your tests in TypeScript as you would usually do and import from `ava`, not from `ava-ts`, just as you would always do.
+Write your tests in TypeScript and import from `ava`, not from `ava-ts`, just as you would always do.
 
 ```typescript
 // test.ts
@@ -39,12 +39,12 @@ test('one plus two equals three', t => {
 
 Instead of running `ava`, just run the `ava-ts` CLI tool instead. That's it!
 
-It will use all the same options and defaults you know from AVA, but searches for `*.ts` files instead of `*.js`.
+It will use all the same options and defaults you know from AVA, but searches for `*.ts` files instead of `*.js` and will transparently compile them with TypeScript.
 
 ```
 $ ava-ts --help
 
-Fork of the AVA test runner with native typescript support 🚀
+Zero-config TypeScript support for the AVA test runner 🚀
 
 Usage
   ava-ts [<file|directory|glob> ...]
@@ -73,17 +73,15 @@ Default patterns when no arguments:
   test.ts test.tsx test-*.ts test-*.tsx test/**/*.ts test/**/*.tsx **/__tests__/**/*.ts **/__tests__/**/*.tsx **/*.test.ts **/*.test.tsx
 ```
 
+
 ## Documentation
 
 See [AVA's official docs](https://github.com/avajs/ava) for detailed information.
 
-`test.before()` registers a hook to be run before the first test in your test file. Similarly `test.after()` registers a hook to be run after the last test. Use `test.after.always()` to register a hook that will **always** run once your tests and other hooks complete. `.always()` hooks run regardless of whether there were earlier failures or if all tests were skipped, so they are ideal for cleanup tasks. There are two exceptions to this however. If you use `--fail-fast` AVA will stop testing as soon as a failure occurs, and it won't run any hooks including the `.always()` hooks. Uncaught exceptions will crash your tests, possibly preventing `.always()` hooks from running.
-If a test is skipped with the `.skip` modifier, the respective `.beforeEach()` and `.afterEach()` hooks are not run. Likewise, if all tests in a test file are skipped `.before()` and `.after()` hooks for the file are not run. Hooks modified with `.always()` will always run, even if all tests are skipped.
-
 
 ## Configuration
 
-The following AVA configuration is transparently set to consume TypeScript files:
+The following AVA configuration is transparently applied to consume TypeScript files:
 
 ```json
 {
