@@ -1,6 +1,6 @@
 {
 	"name": "ava-ts",
-	"version": "1.0.0",
+	"version": "1.0.0-rc",
 	"description": "Fork of the AVA test runner with native typescript support 🚀",
 	"author": "Andy Wermke (https://github.com/andywer)",
 	"license": "MIT",
