@@ -101,6 +101,10 @@ Especially when working with bundlers like webpack you will encounter this issue
 ```sh
 TS_NODE_COMPILER_OPTIONS='{"module":"commonjs"}' ava-ts
 ```
+On Windows:
+```windows
+set TS_NODE_COMPILER_OPTIONS={\"module\":\"commonjs\"} && ava-ts
+```
 
 If you feel this use case needs to be improved, complain in [#5](https://github.com/andywer/ava-ts/issues/5) 😉
 </details>
